@@ -12,10 +12,6 @@ const MongoStore = require('connect-mongo')(session);
 const sassMiddleware =require('node-sass-middleware');
 
 
-<<<<<<< HEAD
-const sassMiddleware = require('node-sass-middleware');
-
-=======
 app.use(sassMiddleware({
     src: './assets/scss',
     dest: './assets/css',
@@ -23,7 +19,6 @@ app.use(sassMiddleware({
     outputStyle: 'extended',
     prefix: '/css'
 }));
->>>>>>> e594d9ad30b03c36f39a8d432f33a30a0b85fbda
 app.use(express.urlencoded());
 
 app.use(cookieParser());
